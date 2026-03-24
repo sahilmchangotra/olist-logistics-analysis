@@ -1,74 +1,65 @@
-# 🚚 Logistics & Delivery Performance Analytics
-## SQL Case Study | JET SODA Style | Brazilian E-Commerce
+# OLIST Logistics & Commercial SQL Analysis
 
-End-to-end SQL analysis of logistics and delivery performance
-using the OLIST Brazilian E-Commerce dataset — mirroring the
-analytical framework used by logistics operations teams at
-companies like Just Eat Takeaway, Picnic and Booking.com.
+SQL case study using the OLIST Brazilian e-commerce dataset in PostgreSQL, framed around JET SODA-style logistics analytics and BOL-style commercial questions.
 
----
+## Project Overview
 
-### 📌 Project Overview
-**Dataset:** OLIST Brazilian E-Commerce (Kaggle)
-**Tool:** PostgreSQL
-**Schema:** kaggle
-**Period:** 2016-2018
-**Focus:** Courier performance, SLA monitoring,
-           delivery time trends, seller quality scoring
+This repository contains stakeholder-driven SQL analyses based on the OLIST Brazilian e-commerce dataset.
 
----
+The project is designed to simulate practical analytics work in logistics and marketplace operations, including:
 
-### 🛠️ Skills Demonstrated
-| Skill | Details |
-|---|---|
-| INTERVAL calculations | SLA breach detection — delivered vs estimated |
-| Window Functions | DENSE_RANK, rolling averages, LAG |
-| Multi-table JOINs | 4-table joins for seller scorecards |
-| CTEs | Multi-layer CTE chains with granularity control |
-| Business Analytics | KPI design, performance flagging, trend analysis |
+- delivery SLA monitoring
+- seller performance analysis
+- customer experience tracking
+- freight cost efficiency
+- category-level operational insights
 
----
+## Dataset & Tools
 
-### 📂 Repository Structure
-| File | Description |
-|---|---|
-| `sql/01_logistics_performance.sql` | SLA breach, delivery trends, seller scorecard |
+- **Dataset:** OLIST Brazilian E-Commerce dataset
+- **Database:** PostgreSQL
+- **IDE:** DataGrip
+- **Editor:** VS Code
+- **Focus:** Logistics, marketplace operations, and commercial analytics
 
----
+## SQL Topics Practiced
 
-### 💡 Key Business Findings
+- multi-table joins
+- aggregation and KPI design
+- granularity control
+- window functions
+- ranking
+- percentage contribution analysis
+- stakeholder-style business questions
 
-**SLA Breach Analysis**
-- Maceio worst performer — 25% breach rate
-- Northeast Brazil cities dominate worst performers
-- Sao Paulo (15K orders) maintains 3.35% breach rate
-- Logistics infrastructure weakest in Northeast Brazil
+## Repository Structure
 
-**Delivery Time Trend**
-- Network improved 63% — 19 days (2016) → 7 days (2018)
-- Feb-Mar 2018 Performance Alert — post Black Friday backlog
-  overlapping with Brazilian Carnival season demand spike
-- Rolling 3-month average reveals sustained pressure
-  vs single month anomalies
+- `sql/01_delivery_performance_summary.sql`
+- `sql/02_customer_scorecard.sql`
+- `sql/03_seller_performance_summary.sql`
+- `sql/04_freight_cost_by_category.sql`
+- `sql/99_notes_and_question_bank.md`
 
-**Seller Performance Scorecard**
-- Worst seller — 31.58% breach + 3.07/5 review score
-- High breach rate inversely correlates with review score
-- Proves: faster delivery = higher customer satisfaction
-- 20+ sellers maintain 0% breach rate — model performers
+## Key Findings
 
----
+### Freight Cost by Category
+- `cama_mesa_banho` has the highest total freight spend.
+- Other large freight-cost categories include `beleza_saude`, `moveis_decoracao`, `esporte_lazer`, and `informatica_acessorios`.
+- Furniture-related categories show especially high average freight per order.
+- Some categories have a very high freight burden relative to revenue, making them candidates for delivery-fee repricing or courier renegotiation.
 
-### 🎯 JET SODA Relevance
-This analysis directly mirrors the work of JET's Global
-Scoober Operations Data Analytics (SODA) team:
-- SLA monitoring by courier zone
-- Network performance trend analysis
-- Courier/seller quality intervention scoring
-- Delivery time KPI tracking for capacity planning
+## Why This Project Matters
 
----
+This project is built as interview-oriented practice for logistics and operations analytics roles.
 
-### 📁 Dataset Source
-[OLIST Brazilian E-Commerce](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
-Period: September 2016 — October 2018
+It demonstrates the ability to:
+- translate stakeholder questions into SQL
+- choose the correct level of aggregation
+- calculate operational KPIs
+- summarize findings clearly for business audiences
+
+## Next Steps
+
+- Continue the remaining 28-question SQL practice bank
+- Add Tableau dashboards from selected outputs
+- Add BigQuery versions of key analyses
