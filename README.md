@@ -44,6 +44,17 @@ The questions focus on:
 - ranking
 - KPI design from business questions
 
+## Key Numerical Highlights
+
+- **Delivery performance:** ~**92%** of delivered OLIST orders arrived **early**, suggesting that estimated delivery dates were often padded.
+- **City SLA performance:** **Maceió** had the worst breach rate at **25%**, while **São Paulo** had a much lower breach rate of **3.35%** among high-volume cities.
+- **Network improvement over time:** average delivery time improved from **19 days** in **October 2016** to **7.29 days** in **August 2018**, a **63% improvement**.
+- **Seller performance risk:** the worst-performing seller showed **31.58% SLA breach rate** with an average review score of **3.07**, while **20+ sellers** had **0% breach rate**.
+- **Customer quality signal:** **VIP customers (>R$1000)** showed **0% SLA breach** and **review scores above 4**, making delivery quality a strong retention signal.
+- **Freight cost concentration:** `cama_mesa_banho` was the most expensive freight category with **9,417 orders** and **R$204,693.04** in freight cost.
+- **Other major freight-cost categories:** `beleza_saude` (**R$182,566.73**), `moveis_decoracao` (**R$172,749.30**), and `esporte_lazer` (**R$168,607.51**).
+- **Highest freight burden categories:** `artigos_de_natal` (**26.84%**), `sinalizacao_e_seguranca` (**23.23%**), `alimentos_bebidas` (**22.90%**), and `eletronicos` (**22.52%**) had especially high freight as a share of total transaction value.
+
 ## Key Learnings
 
 - Always verify the grain before calculating averages.
