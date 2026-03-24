@@ -1,65 +1,58 @@
-# OLIST Logistics & Commercial SQL Analysis
+# 🚚 OLIST Logistics SQL Analysis
 
-SQL case study using the OLIST Brazilian e-commerce dataset in PostgreSQL, framed around JET SODA-style logistics analytics and BOL-style commercial questions.
+SQL case-study project using the OLIST Brazilian e-commerce dataset, framed around JET SODA-style logistics analytics.
 
 ## Project Overview
 
-This repository contains stakeholder-driven SQL analyses based on the OLIST Brazilian e-commerce dataset.
+This repository contains stakeholder-style SQL analyses designed to simulate practical logistics and marketplace analytics work.
 
-The project is designed to simulate practical analytics work in logistics and marketplace operations, including:
+The questions focus on:
+- SLA breach monitoring
+- delivery network performance trends
+- seller performance scorecards
+- freight cost efficiency by product category
 
-- delivery SLA monitoring
-- seller performance analysis
-- customer experience tracking
-- freight cost efficiency
-- category-level operational insights
+## Dataset and Tools
 
-## Dataset & Tools
-
-- **Dataset:** OLIST Brazilian E-Commerce dataset
+- **Dataset:** OLIST Brazilian E-Commerce
 - **Database:** PostgreSQL
 - **IDE:** DataGrip
 - **Editor:** VS Code
-- **Focus:** Logistics, marketplace operations, and commercial analytics
 
-## SQL Topics Practiced
+## SQL Files
+
+- `sql/01_sla_breach_rate_by_city.sql`  
+  Which cities have the worst delivery SLA performance?
+
+- `sql/02_monthly_delivery_time_trend.sql`  
+  Is the delivery network improving over time?
+
+- `sql/03_seller_performance_scorecard.sql`  
+  Which sellers are causing the most delivery delays?
+
+- `sql/04_freight_cost_by_category.sql`  
+  Which product categories drive the highest freight spend?
+
+## Key Skills Practiced
 
 - multi-table joins
-- aggregation and KPI design
-- granularity control
+- CTEs
+- interval logic
+- aggregation at the correct grain
 - window functions
+- rolling averages
 - ranking
-- percentage contribution analysis
-- stakeholder-style business questions
+- KPI design from business questions
 
-## Repository Structure
+## Key Learnings
 
-- `sql/01_delivery_performance_summary.sql`
-- `sql/02_customer_scorecard.sql`
-- `sql/03_seller_performance_summary.sql`
-- `sql/04_freight_cost_by_category.sql`
-- `sql/99_notes_and_question_bank.md`
-
-## Key Findings
-
-### Freight Cost by Category
-- `cama_mesa_banho` has the highest total freight spend.
-- Other large freight-cost categories include `beleza_saude`, `moveis_decoracao`, `esporte_lazer`, and `informatica_acessorios`.
-- Furniture-related categories show especially high average freight per order.
-- Some categories have a very high freight burden relative to revenue, making them candidates for delivery-fee repricing or courier renegotiation.
-
-## Why This Project Matters
-
-This project is built as interview-oriented practice for logistics and operations analytics roles.
-
-It demonstrates the ability to:
-- translate stakeholder questions into SQL
-- choose the correct level of aggregation
-- calculate operational KPIs
-- summarize findings clearly for business audiences
+- Always verify the grain before calculating averages.
+- Average freight per order is not the same as average freight per order item.
+- Window functions are useful for trends, ranking, and rolling metrics.
+- Business questions need to be translated carefully into SQL definitions.
 
 ## Next Steps
 
-- Continue the remaining 28-question SQL practice bank
-- Add Tableau dashboards from selected outputs
-- Add BigQuery versions of key analyses
+- Continue the remaining OLIST SQL practice bank
+- Add time-series and BOL-style advertising questions
+- Publish Tableau dashboards from selected query outputs
