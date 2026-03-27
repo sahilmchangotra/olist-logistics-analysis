@@ -78,6 +78,11 @@ Planned dashboard views:
 | `06_repeat_buyers_lead.sql` | Customers with a second order within 30 days of first delivered order. | LEAD() before filter, PARTITION BY customer, INTERVAL 30 days |
 | `07_ntile_delivery_tiers.sql` | Delivery speed tiers (NTILE 4) compared before/after July 2017. | Period flag before NTILE, raw row level, GROUP BY after NTILE |
 | `08_union_all_combined.sql` | 3-part analysis: orders/revenue by status + avg delivery days + orders by payment type. | Single CTE reused 3x, NULL type casting, one ORDER BY at end |
+| `bol_01_roas_by_category.sql` | Which product categories deliver best ROAS? Revenue / freight cost proxy. Min 100 orders. | SUM/NULLIF, RANK() DESC |
+| `bol_02_conversion_funnel.sql` | Which categories convert customers to repeat buyers within 30 days? | MIN first order, INTERVAL 30 days, MAX CASE WHEN flag |
+| `bol_03_ab_test_framework.sql` | Is the revenue difference between SP (test) and other states (control) statistically significant? | AVG, STDDEV, t-score formula, CROSS JOIN |
+| `bol_04_rfm_segments.sql` | Segment customers into Champions, Loyals, At Risk, Churn using RFM scoring. | NTILE(4) R/F/M scores, MAX ref date, CASE segmentation |
+| `bol_05_campaign_incrementality.sql` | Did RJ campaign lift conversion vs MG control group? Calculate lift %. | CROSS JOIN lift formula, UNION ALL 3-row output |
 
 ---
 
@@ -106,12 +111,12 @@ Planned dashboard views:
 - NTILE(4) delivery speed tiers across time periods (before/after July 2017)
 - Multi-part UNION ALL from single shared CTE (orders + delivery + payments)
 
-**Pending — BOL Retail Media**
-- ROAS simulation by product category
-- Customer conversion funnel — 30-day window
-- A/B test framework — revenue significance in SQL
-- RFM segments + promotion response rates
-- Campaign incrementality — exposed vs control lift
+**BOL Retail Media Advertising (Completed)**
+- BOL Q1: ROAS by category — pcs leads at 22.62, relogios_presentes best volume+ROAS balance
+- BOL Q2: Conversion funnel — eletrodomesticos best at 3.34%, overall low rates confirm 1-2% repeat finding
+- BOL Q3: A/B test framework — SP t-score -15.18, statistically significant underperformance vs control
+- BOL Q4: RFM segmentation — At Risk High Value (R$236 avg, 411 days gone) = top win-back target
+- BOL Q5: Campaign incrementality — RJ vs MG lift +0.41%, R$207K revenue uplift
 
 ---
 
