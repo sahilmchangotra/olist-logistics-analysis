@@ -32,15 +32,12 @@ business questions into SQL with measurable outcomes.
 
 > 🔗 > 🔗 **[View OLIST Analytics Dashboard on Tableau Public](https://public.tableau.com/app/profile/sahil.changotra/viz/OLISTBrazilianE-CommerceAnalyticsJETSODABOL/OLISTAnalyticsJETSODABOLRetailMedia)**
 
-Planned dashboard views:
-
-| Dashboard | Key Metric |
-|---|---|
-| SLA Breach Rate by City | Maceió 25% worst — Northeast cities dominate |
-| Delivery Time Trend | 19 days (Oct 2016) → 7.29 days (Aug 2018) — 63% improvement |
-| Seller Performance Scorecard | Worst seller 31.58% breach, 3.07 avg review |
-| Customer Segment Distribution | VIP / Regular / Occasional — revenue + delivery quality |
-| NTILE Delivery Speed Tiers | Fast tier improved, slow tier worsened after July 2017 |
+Dashboard includes 5 story points:
+- 🚚 Logistics Operations — SLA breach, delivery trend, seller scorecard
+- 🚚 Freight Cost & Delivery Performance — category freight, speed tiers
+- 📣 Customer & Marketing Analytics — segments, ROAS by category
+- 🎯 RFM & Retention Analytics — RFM segments, repeat buyer cohort
+- 📊 Campaign Incrementality — RJ vs MG lift analysis
 
 ---
 
