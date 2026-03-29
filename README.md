@@ -30,7 +30,7 @@ business questions into SQL with measurable outcomes.
 
 ## 📊 Tableau Dashboard
 
-> 🔗 **Publishing Saturday — link will be added here**
+> 🔗 > 🔗 **[View OLIST Analytics Dashboard on Tableau Public](https://public.tableau.com/app/profile/sahil.changotra/viz/OLISTBrazilianE-CommerceAnalyticsJETSODABOL/OLISTAnalyticsJETSODABOLRetailMedia)**
 
 Planned dashboard views:
 
