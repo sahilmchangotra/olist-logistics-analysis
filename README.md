@@ -22,7 +22,7 @@ The project is structured as a portfolio of applied SQL skills rather than a col
 
 ## 📊 Tableau Dashboard
 
-> 🔗 **[View OLIST Analytics Dashboard on Tableau Public](https://public.tableau.com/app/profile/sahil.changotra/viz/OLISTBrazilianE-CommerceAnalyticsJETSODABOL/OLISTAnalyticsJETSODABOLRetailMedia)**
+> 🔗 **[View OLIST Analytics Dashboard on Tableau Public](https://public.tableau.com/app/profile/sahil.changotra/viz/OLISTBrazilianE-CommerceAnalytics/Story1)**
 
 Five-story dashboard covering logistics operations, freight performance, customer segmentation, RFM retention, and campaign incrementality.
 
