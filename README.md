@@ -4,7 +4,7 @@
 
 Sahil Changotra · The Hague, Netherlands · 2026
 
-[![Tableau](https://img.shields.io/badge/Tableau-Published-blue)](https://public.tableau.com/app/profile/sahil.changotra/viz/OLISTBrazilianE-CommerceAnalyticsJETSODABOL/OLISTAnalyticsJETSODABOLRetailMedia)
+[![Tableau](https://img.shields.io/badge/Tableau-Published-blue)](https://public.tableau.com/app/profile/sahil.changotra/viz/OLISTBrazilianE-CommerceAnalytics/Story1)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-DataGrip-336791)](https://github.com/sahilmchangotra/olist-logistics-analysis)
 [![GitHub](https://img.shields.io/badge/Status-Complete-brightgreen)](https://github.com/sahilmchangotra/olist-logistics-analysis)
 
